@@ -1,9 +1,9 @@
 import React from 'react'
 import './chatbot.css'
-const chatbot = () => {
+const chatbot = ({onStartChat}) => {
   return (
     <div className='start-page'>
-      <button className='start-page-btn'>Chat bot</button>
+      <button className='start-page-btn' onClick={onStartChat}>Chat bot</button>
     </div>
   )
 }

@@ -1,7 +1,7 @@
 import React from 'react';
 import './chatApp.css';
 
-const ChatApp = () => {
+const ChatApp = ({onGoBack}) => {
   return (
     <div className='chatApp'>
       <div className="chat-list">
@@ -26,7 +26,7 @@ const ChatApp = () => {
       <div className="chat-window">
         <div className="chat-title">
           <h3>Chat with AI</h3>
-          <i className='bx bx-arrow-back arrow'></i>
+          <i className='bx bx-arrow-back arrow' onClick={onGoBack}></i>
         </div>
         
         <div className="chat">
@@ -47,7 +47,7 @@ const ChatApp = () => {
         <form className='msg-form'>
           <i className='fa-solid fa-face-smile emoji'></i>
           <input className='msg-input' placeholder='Type a message.....' type='text' />
-          <i className='fa-solid fa-paper-plane'></i>
+          <i className='fa-solid fa-paper-plane plane'></i>
         </form>
       </div>
     </div>
